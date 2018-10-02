@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-/*
+
 int somme (int a,int b)
 {
   return(a+b);
@@ -18,7 +18,7 @@ int main()
   int b;
   char c;
   printf("Entrer a et b :\n");
-  scanf("%d %d\n",&a,&b );
+  scanf("%d %d",&a,&b );
   printf("Entrer l'operation a effectuer :\n");
   scanf("%c\n",&c );
 
@@ -32,22 +32,5 @@ int main()
   }
 
 return 0;
-*/
 
-int a=2;
-int b=3;
-
-void swap(int x,int y)
-{
-  int z=y;
-  y=x;
-  x=z;
-}
-
-int main(){
-
-
-  swap(a,b);
-  printf("a=%d et b=%d \n",a,b);
-  return 0;
 }
