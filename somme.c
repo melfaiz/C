@@ -14,23 +14,23 @@ int produit (int a,int b)
 
 int main()
 {
-  printf("%d",somme(11,222));
   int a;
   int b;
   char c;
   printf("Entrer a et b :\n");
   scanf("%d %d",&a,&b );
   printf("Entrer l'operation a effectuer :\n");
-  scanf("%s",&c );
+  scanf("%c\n",&c );
 
   if (c=='+')
   {
     printf("le resultat est : %d\n",somme(a,b));
   }
-  else if (c=='+')
+  else if (c=='*')
   {
     printf("le resultat est : %d\n",produit(a,b));
   }
 
+return 0;
 
 }
