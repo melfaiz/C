@@ -3,12 +3,16 @@
 
 
 
+struct bidule {
+  char a;
+  long int c ;
+  char b;
+
+};
+
 
 int main()
 {
-
-
-
-return 0;
-
+  printf("%lu\n",  sizeof(struct bidule));
+  return 0;
 }
