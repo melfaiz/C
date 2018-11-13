@@ -32,15 +32,9 @@ int my_str_copy2(char string1[] , char string2[]){
 
 
 int main() {
-
-char str[] = "HELLO WORLD";
-
-char mot[my_str_len(str)];
-
-my_str_copy2(str,mot) ;
-
-printf("%s\n",mot );
-
-return 0;
-
+  char str[] = "HELLO WORLD";
+  char mot[my_str_len(str)];
+  my_str_copy2(str,mot) ;
+  printf("%s\n",mot );
+  return 0;
 }

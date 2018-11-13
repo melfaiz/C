@@ -1,3 +1,6 @@
+#include <stdio.h>
+#include <stdlib.h>
+
 #define NAME_LENGTH 100
 #define ADDRESS_LENGTH 100
 #define ANNUAIRE_SIZE 10
@@ -29,11 +32,12 @@ struct Person
 */
 
 void addUser(struct Person annuaire[],char name[], int age, enum Sex sex, char street[], int num){
-  struct Address address = {street,num};
+  struct Address address = {{street},num};
   int i=0;
   while(i<ANNUAIRE_SIZE){
     if (annuaire[i].isEmpty) {
-      annuaire[i] = {name,age,sex,address,0};
+      struct Person person = {name,age,sex,address,0};
+      annuaire[i] = person;
       break;
     }
     i++;
