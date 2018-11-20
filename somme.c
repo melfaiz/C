@@ -12,6 +12,7 @@ int produit (int a,int b)
 }
 
 
+
 int main()
 {
   int a;
@@ -21,7 +22,6 @@ int main()
   scanf("%d %d",&a,&b );
   printf("Entrer l'operation a effectuer :\n");
   scanf("%c\n",&c );
-
   if (c=='+')
   {
     printf("le resultat est : %d\n",somme(a,b));
@@ -30,7 +30,6 @@ int main()
   {
     printf("le resultat est : %d\n",produit(a,b));
   }
-
-return 0;
+  return 0;
 
 }

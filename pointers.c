@@ -3,6 +3,8 @@
 #define max(a,b) a>b?a:b
 #define min(a,b) a<b?a:b
 
+
+
 void swap(int* a,int* b){
   int temp = *b;
   *b=*a;
@@ -19,9 +21,7 @@ void order(int* a,int* b,int*c){
   if (*a > *c) {
     swap(a,c);
   }
-
 }
-
 
 void min_max(int l, int t[], int *min, int *max){
   int ma = t[0];
@@ -51,14 +51,11 @@ char *stpcpy(char *dst, const char *src){
 }
 
 
+
 int main () {
    char* src="HELLO WORLD!";
    char* dest;
-
    *dest = stpcpy(dest, src);
-
-
    printf("Final copied string : %s\n", dest);
-
    return(0);
 }
